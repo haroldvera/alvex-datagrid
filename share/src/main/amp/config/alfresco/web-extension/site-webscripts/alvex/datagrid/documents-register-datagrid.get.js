@@ -41,7 +41,16 @@ function main()
          label: xmlAction.@label.toString()
       });
    }
-
+    actionSet.push(
+        {
+            className: "onActionSyncAcuerdo", //onActionComplete
+            type: "action-link",
+            permission: "edit",
+            href: "",
+            func: "SyncAcuerdoAction", //MyCustomAction
+            label: "actions.document.request-sync"
+        }
+    );
    model.actionSet = actionSet;
 }
 
